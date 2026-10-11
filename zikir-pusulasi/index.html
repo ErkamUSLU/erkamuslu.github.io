@@ -12,7 +12,10 @@
 <meta property="og:title" content="Zikir Pusulası – Zikirmatik, Esmaül Hüsna, Namaz Vakitleri, Kıble">
 <meta property="og:description" content="Zikirmatik, 99 Esmaül Hüsna, namaz vakitleri, kıble pusulası ve ana ekran widget'ı. Android için Google Play'de.">
 <meta property="og:url" content="https://erkamuslu.github.io/zikir-pusulasi/">
+<meta property="og:image" content="https://erkamuslu.github.io/zikir-pusulasi/icon.png">
 <meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 
 <script type="application/ld+json">
 {
@@ -23,6 +26,7 @@
   "applicationCategory": "LifestyleApplication",
   "description": "Zikirmatik, 99 Esmaül Hüsna, namaz vakitleri, kıble pusulası ve ana ekran widget'ı.",
   "url": "https://erkamuslu.github.io/zikir-pusulasi/",
+  "image": "https://erkamuslu.github.io/zikir-pusulasi/icon.png",
   "downloadUrl": "https://play.google.com/store/apps/details?id=com.erkam.zikirpusulasi",
   "inLanguage": ["tr", "en"],
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
@@ -68,13 +72,9 @@
     padding: 56px 0 40px;
   }
   .logo {
-    width: 84px; height: 84px; margin: 0 auto 18px;
-    border-radius: 22px;
-    background: linear-gradient(135deg, var(--primary), #0a3f35);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--accent);
-    font-size: 40px;
-    box-shadow: 0 8px 24px rgba(15, 92, 77, .25);
+    display: block;
+    width: 96px; height: 96px; margin: 0 auto 18px;
+    filter: drop-shadow(0 8px 16px rgba(15, 92, 77, .3));
   }
   h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin: 0 0 10px; line-height: 1.2; }
   .lead { font-size: 1.1rem; color: var(--muted); max-width: 600px; margin: 0 auto 26px; }
@@ -144,7 +144,7 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="logo" aria-hidden="true">☪</div>
+    <img class="logo" src="icon.png" width="96" height="96" alt="Zikir Pusulası uygulama ikonu">
     <h1>Zikir Pusulası</h1>
     <p class="lead">Zikirmatik, 99 Esmaül Hüsna, namaz vakitleri, kıble pusulası ve ana ekran widget'ı. Hepsi tek uygulamada.</p>
     <a class="btn" href="https://play.google.com/store/apps/details?id=com.erkam.zikirpusulasi">Google Play'den indir</a>
