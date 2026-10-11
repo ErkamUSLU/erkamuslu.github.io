@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zikir Pusulası – Zikirmatik, Esmaül Hüsna, Namaz Vakitleri ve Kıble Pusulası</title>
+<meta name="description" content="Zikir Pusulası: zikirmatik, 99 Esmaül Hüsna, namaz vakitleri, kıble pusulası ve ana ekran widget'ı tek uygulamada. Android için Google Play'de.">
+<link rel="canonical" href="https://erkamuslu.github.io/zikir-pusulasi/">
+<meta name="theme-color" content="#0f5c4d">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zikir Pusulası – Zikirmatik, Esmaül Hüsna, Namaz Vakitleri, Kıble">
+<meta property="og:description" content="Zikirmatik, 99 Esmaül Hüsna, namaz vakitleri, kıble pusulası ve ana ekran widget'ı. Android için Google Play'de.">
+<meta property="og:url" content="https://erkamuslu.github.io/zikir-pusulasi/">
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Zikir Pusulası",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "LifestyleApplication",
+  "description": "Zikirmatik, 99 Esmaül Hüsna, namaz vakitleri, kıble pusulası ve ana ekran widget'ı.",
+  "url": "https://erkamuslu.github.io/zikir-pusulasi/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.erkam.zikirpusulasi",
+  "inLanguage": ["tr", "en"],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
+  "author": { "@type": "Person", "name": "Erkam" }
+}
+</script>
+
+<style>
+  :root {
+    --bg: #f7f5ef;
+    --card: #ffffff;
+    --text: #1d2a27;
+    --muted: #5d6b67;
+    --primary: #0f5c4d;
+    --primary-text: #ffffff;
+    --accent: #c9a24a;
+    --line: #e3dfd2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1715;
+      --card: #16221f;
+      --text: #eef2f0;
+      --muted: #9fb0aa;
+      --primary: #2fa58c;
+      --primary-text: #06130f;
+      --accent: #d9b45c;
+      --line: #25352f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  header.hero {
+    text-align: center;
+    padding: 56px 0 40px;
+  }
+  .logo {
+    width: 84px; height: 84px; margin: 0 auto 18px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, var(--primary), #0a3f35);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent);
+    font-size: 40px;
+    box-shadow: 0 8px 24px rgba(15, 92, 77, .25);
+  }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin: 0 0 10px; line-height: 1.2; }
+  .lead { font-size: 1.1rem; color: var(--muted); max-width: 600px; margin: 0 auto 26px; }
+
+  .btn {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--primary-text);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-size: 1.05rem;
+    box-shadow: 0 4px 14px rgba(15, 92, 77, .25);
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .sub { font-size: .85rem; color: var(--muted); margin-top: 12px; }
+
+  section { padding: 28px 0; }
+  h2 { font-size: 1.4rem; margin: 0 0 18px; text-align: center; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px;
+  }
+  .card .ico { font-size: 28px; margin-bottom: 6px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .96rem; }
+
+  .note {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 16px 18px;
+    color: var(--muted);
+    font-size: .94rem;
+  }
+  .note + .note { margin-top: 12px; }
+
+  .cta { text-align: center; padding: 36px 0 12px; }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: .88rem;
+    padding: 28px 0 48px;
+    border-top: 1px solid var(--line);
+    margin-top: 28px;
+  }
+  footer a { color: var(--primary); }
+  footer .links a { margin: 0 8px; }
+
+  .en { margin-top: 8px; }
+  .en h2 { margin-bottom: 8px; }
+  .en p { text-align: center; color: var(--muted); max-width: 640px; margin: 0 auto; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="logo" aria-hidden="true">☪</div>
+    <h1>Zikir Pusulası</h1>
+    <p class="lead">Zikirmatik, 99 Esmaül Hüsna, namaz vakitleri, kıble pusulası ve ana ekran widget'ı. Hepsi tek uygulamada.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.erkam.zikirpusulasi">Google Play'den indir</a>
+    <div class="sub">Android için · Ücretsiz · Türkçe ve İngilizce</div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section aria-labelledby="ozellikler">
+    <h2 id="ozellikler">Neler var?</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="ico">📿</div>
+        <h3>Zikirmatik</h3>
+        <p>Hedef sayı belirle, zikrini çek. Hedefe ulaşınca sesli ve titreşimli bildirim al. Tamamladığın zikirler kaydedilir.</p>
+      </div>
+      <div class="card">
+        <div class="ico">✨</div>
+        <h3>99 Esmaül Hüsna</h3>
+        <p>Her isim için Arapça yazılışı, anlamı ve faziletiyle ayrı sayaç. İstediğin ismi istediğin sayıda çek.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🕌</div>
+        <h3>Namaz vakitleri</h3>
+        <p>Türkiye'de il ve ilçene göre Diyanet kaynaklı vakitler. Yurt dışında bulunduğun konuma göre hesaplanır.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🧭</div>
+        <h3>Kıble pusulası</h3>
+        <p>Konumuna göre kıble yönünü gösterir. Telefonu düz tutman yeterli.</p>
+      </div>
+      <div class="card">
+        <div class="ico">📱</div>
+        <h3>Ana ekran widget'ı</h3>
+        <p>Günün vakitlerini uygulamayı açmadan ana ekranından gör.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🔒</div>
+        <h3>Hesap gerekmez</h3>
+        <p>Üyelik yok. Zikir geçmişin ve ayarların yalnızca telefonunda durur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="bilgi">
+    <h2 id="bilgi">Bilmen gerekenler</h2>
+    <div class="note">
+      <strong>Reklamlar ve abonelik:</strong> Uygulama reklam gösterir. İstersen isteğe bağlı aylık abonelikle reklamları kaldırabilirsin. Abonelik her ay otomatik yenilenir; Google Play → Ödemeler ve abonelikler → Abonelikler bölümünden istediğin zaman iptal edebilirsin.
+    </div>
+    <div class="note">
+      <strong>Konum izni:</strong> Namaz vakitleri ve kıble için konum yalnızca uygulama açıkken, tek seferlik istenir. İzin vermezsen zikirmatik ve Esmaül Hüsna yine çalışır.
+    </div>
+    <div class="note">
+      <strong>Resmî uygulama değildir:</strong> Zikir Pusulası bağımsız bir geliştirici tarafından hazırlanmıştır; Diyanet İşleri Başkanlığı'nın resmî uygulaması değildir. Türkiye'deki vakitler Diyanet kaynaklı verilerle gösterilir.
+    </div>
+  </section>
+
+  <div class="cta">
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.erkam.zikirpusulasi">Google Play'den indir</a>
+  </div>
+
+  <section class="en" lang="en" aria-labelledby="en-title">
+    <h2 id="en-title">Zikir Pusulası (English)</h2>
+    <p>A dhikr counter, the 99 Names of Allah, prayer times, a Qibla compass and a home screen widget in one free Android app. No account needed. Available in Turkish and English.</p>
+    <p style="margin-top:14px"><a href="https://play.google.com/store/apps/details?id=com.erkam.zikirpusulasi" style="color:var(--primary);font-weight:600">Get it on Google Play</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="gizlilik.html">Gizlilik Politikası / Privacy Policy</a>
+      <a href="mailto:ercome1994@gmail.com">İletişim</a>
+    </div>
+    <p>© 2026 Erkam · Zikir Pusulası</p>
+  </div>
+</footer>
+
+</body>
+</html>
